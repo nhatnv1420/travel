@@ -1,83 +1,111 @@
 * {
-    box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 body {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 html {
-    box-sizing: border-box;
-    font-family: 'Times New Roman', Times, serif;
+  box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
 }
 
 ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 a {
-    text-decoration: none;
-    color: var(--black-color);
+  text-decoration: none;
+  color: var(--black-color);
 }
 
 a:hover {
-    color: #000;
+  color: #000;
 }
 
 p {
-    margin: 0;
+  margin: 0;
 }
 :root {
-    --white-color: #fff;
-    --red-color: red;
-    --black-color: #555;
-    --yellow-color: #ffa105;
-    --blue-color: #14b9d5;
-    --green-color: #1bbc9c;
-    --purple-color: #ba71da;
-    --orange-color: #f76570;
-    --header-bg-nav-color: #615e69;
-
+  --white-color: #fff;
+  --red-color: red;
+  --black-color: #555;
+  --yellow-color: #ffa105;
+  --blue-color: #14b9d5;
+  --green-color: #1bbc9c;
+  --purple-color: #ba71da;
+  --orange-color: #f76570;
+  --header-bg-nav-color: #615e69;
 }
 
 @keyframes hideItem {
-    from { 
-        opacity: 1;
-    } to { 
-        opacity: 0;
-    }
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
 }
 
 .app {
-    width: 100%;
-    overflow: hidden;
+  width: 100%;
+  overflow: hidden;
 }
 .link-click {
-    font-size: 14px;
-    color: var(--white-color);
-    display: block;
-    letter-spacing: 2px;
-    color: #fff;
+  font-size: 14px;
+  color: var(--white-color);
+  display: block;
+  letter-spacing: 2px;
+  color: #fff;
 }
 
 .text-heading {
-    text-align: center;
-    font-size: 36px;
-    font-weight: bold;
-    opacity: 0.8;
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+  opacity: 0.8;
 }
 
 .text-subheading {
-    font-size: 15px;
-    opacity: 0.6;
-    letter-spacing: 2px;
+  font-size: 15px;
+  opacity: 0.6;
+  letter-spacing: 2px;
 }
 
 .text-paragraph {
-    font-size: 15px;
-    opacity: 0.6;
-    letter-spacing: 1px;
+  font-size: 15px;
+  opacity: 0.6;
+  letter-spacing: 1px;
+}
+
+.overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  transform: background-color linear 5s;
+  z-index: 2;
+  display: none;
+}
+
+@keyframes showPrev {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes showNext {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
 }
