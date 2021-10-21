@@ -11,12 +11,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
         integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
         crossorigin="anonymous" />
-    
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
 
     <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/main.css">
+
 </head>
 
 <body>
@@ -25,17 +26,45 @@
         <div class="header">
             <div class="header__show">
                 <div class="header__show-item header__show-item__active">
-                    
+
+                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="./assets/img/header-show-0.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./assets/img/header-show-1.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./assets/img/header-show-2.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./assets/img/header-show-3.jpg" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
                 </div>
-                <!-- <div class="header__show-item">
-                
-                </div>
-                <div class="header__show-item">
-                
-                </div> -->
             </div>
-            <div class="header__demo-btn header__demo-btn-left"><i class="fas fa-angle-double-left"></i></div>
-            <div class="header__demo-btn header__demo-btn-right"><i class="fas fa-angle-double-right"></i></div>
+            <!-- <div class="header__demo-btn header__demo-btn-left"><i class="fas fa-angle-double-left"></i></div>
+            <div class="header__demo-btn header__demo-btn-right"><i class="fas fa-angle-double-right"></i></div> -->
 
             <div class="header-wrap">
                 <div class="header__header-nav">
@@ -47,63 +76,94 @@
                             <li class="header__nav-item"><a href="" class="link-click header__nav-link">HOME</a></li>
                             <li class="header__nav-item"><a href="" class="link-click header__nav-link">PACKAGES</a>
                                 <ul class="header__subnav-list">
-                                    <li class="header__subnav-item"><a href="" class="header__subnav-item-link">Search 1 <span class="header__subnav-label_1">HOT</span></a></li>
-                                    <li class="header__subnav-item"><a href="" class="header__subnav-item-link">Search 2</a></li>
+                                    <li class="header__subnav-item"><a href="" class="header__subnav-item-link">Search 1
+                                            <span class="header__subnav-label_1">HOT</span></a></li>
+                                    <li class="header__subnav-item"><a href="" class="header__subnav-item-link">Search
+                                            2</a></li>
                                     <li class="header__subnav-item">
-                                        <a href="" class="header__subnav-item-link">Tour Package <i class="fas fa-caret-right header__subnav-item-link__icon"></i></a>
+                                        <a href="" class="header__subnav-item-link">Tour Package <i
+                                                class="fas fa-caret-right header__subnav-item-link__icon"></i></a>
                                         <ul class="header__subnav-list header__subnav-list__subnav">
-                                            <li class="header__subnav-item"><a href="" class="header__subnav-item-link">Carousel<span class="header__subnav-label_2">BEST</span></a></li>
-                                            <li class="header__subnav-item"><a href="" class="header__subnav-item-link">Custom Map</a></li>
-                                            <li class="header__subnav-item"><a href="" class="header__subnav-item-link">360° Panorama</a></li>
-                                            <li class="header__subnav-item"><a href="" class="header__subnav-item-link">Default</a></li>
+                                            <li class="header__subnav-item"><a href=""
+                                                    class="header__subnav-item-link">Carousel<span
+                                                        class="header__subnav-label_2">BEST</span></a></li>
+                                            <li class="header__subnav-item"><a href=""
+                                                    class="header__subnav-item-link">Custom Map</a></li>
+                                            <li class="header__subnav-item"><a href=""
+                                                    class="header__subnav-item-link">360° Panorama</a></li>
+                                            <li class="header__subnav-item"><a href=""
+                                                    class="header__subnav-item-link">Default</a></li>
                                         </ul>
                                     </li>
-                                    <li class="header__subnav-item"><a href="" class="header__subnav-item-link">Destination</a></li>
-                                    <li class="header__subnav-item"><a href="" class="header__subnav-item-link">Typology</a></li>
+                                    <li class="header__subnav-item"><a href=""
+                                            class="header__subnav-item-link">Destination</a></li>
+                                    <li class="header__subnav-item"><a href=""
+                                            class="header__subnav-item-link">Typology</a></li>
                                 </ul>
                             </li>
                             <li class="header__nav-item">
                                 <a href="" class="link-click header__nav-link">SHOPE</a>
                                 <ul class="header__subnav-list">
-                                    <li class="header__subnav-item"><a href="" class="header__subnav-item-link">Archive</a></li>
-                                    <li class="header__subnav-item"><a href="" class="header__subnav-item-link">Single Product</a></li>
-                                    <li class="header__subnav-item"><a href="" class="header__subnav-item-link">Cart</a></li>
-                                    <li class="header__subnav-item"><a href="" class="header__subnav-item-link">Checkout</a></li>
+                                    <li class="header__subnav-item"><a href=""
+                                            class="header__subnav-item-link">Archive</a></li>
+                                    <li class="header__subnav-item"><a href="" class="header__subnav-item-link">Single
+                                            Product</a></li>
+                                    <li class="header__subnav-item"><a href="" class="header__subnav-item-link">Cart</a>
+                                    </li>
+                                    <li class="header__subnav-item"><a href=""
+                                            class="header__subnav-item-link">Checkout</a></li>
                                 </ul>
                             </li>
                             </li>
                             <li class="header__nav-item">
                                 <a href="" class="link-click header__nav-link">ABOUT US</a>
                                 <ul class="header__subnav-list">
-                                    <li class="header__subnav-item"><a href="" class="header__subnav-item-link">About Us<span class="header__subnav-label_2">HOT</span></a></li>
-                                    <li class="header__subnav-item"><a href="" class="header__subnav-item-link">About Us 2</a></li>
-                                    <li class="header__subnav-item"><a href="" class="header__subnav-item-link">About Us 3</a></li>
+                                    <li class="header__subnav-item"><a href="" class="header__subnav-item-link">About
+                                            Us<span class="header__subnav-label_2">HOT</span></a></li>
+                                    <li class="header__subnav-item"><a href="" class="header__subnav-item-link">About Us
+                                            2</a></li>
+                                    <li class="header__subnav-item"><a href="" class="header__subnav-item-link">About Us
+                                            3</a></li>
                                 </ul>
                             </li>
                             </li>
                             <li class="header__nav-item">
                                 <a href="" class="link-click header__nav-link">PAGES</a>
                                 <ul class="header__subnav-list">
-                                    <li class="header__subnav-item"><a href="" class="header__subnav-item-link">Services</a></li>
-                                    <li class="header__subnav-item"><a href="" class="header__subnav-item-link">Agenct Tours</a></li>
-                                    <li class="header__subnav-item"><a href="" class="header__subnav-item-link">Testimonials</a></li>
-                                    <li class="header__subnav-item"><a href="" class="header__subnav-item-link">Prices</a></li>
-                                    <li class="header__subnav-item"><a href="" class="header__subnav-item-link">Promotions</a></li>
-                                    <li class="header__subnav-item"><a href="" class="header__subnav-item-link">Fag</a></li>
-                                    <li class="header__subnav-item"><a href="" class="header__subnav-item-link">Comming soon</a></li>
+                                    <li class="header__subnav-item"><a href=""
+                                            class="header__subnav-item-link">Services</a></li>
+                                    <li class="header__subnav-item"><a href="" class="header__subnav-item-link">Agenct
+                                            Tours</a></li>
+                                    <li class="header__subnav-item"><a href=""
+                                            class="header__subnav-item-link">Testimonials</a></li>
+                                    <li class="header__subnav-item"><a href=""
+                                            class="header__subnav-item-link">Prices</a></li>
+                                    <li class="header__subnav-item"><a href=""
+                                            class="header__subnav-item-link">Promotions</a></li>
+                                    <li class="header__subnav-item"><a href="" class="header__subnav-item-link">Fag</a>
+                                    </li>
+                                    <li class="header__subnav-item"><a href="" class="header__subnav-item-link">Comming
+                                            soon</a></li>
                                     <li class="header__subnav-item">
-                                        <a href="" class="header__subnav-item-link">About Us<i class="fas fa-caret-right header__subnav-item-link__icon"></i></a>
+                                        <a href="" class="header__subnav-item-link">About Us<i
+                                                class="fas fa-caret-right header__subnav-item-link__icon"></i></a>
                                         <ul class="header__subnav-list header__subnav-list__subnav">
-                                            <li class="header__subnav-item"><a href="" class="header__subnav-item-link">About Us 1</a></li>
-                                            <li class="header__subnav-item"><a href="" class="header__subnav-item-link">About Us 2</a></li>
-                                            <li class="header__subnav-item"><a href="" class="header__subnav-item-link">About Us 3</a></li>
+                                            <li class="header__subnav-item"><a href=""
+                                                    class="header__subnav-item-link">About Us 1</a></li>
+                                            <li class="header__subnav-item"><a href=""
+                                                    class="header__subnav-item-link">About Us 2</a></li>
+                                            <li class="header__subnav-item"><a href=""
+                                                    class="header__subnav-item-link">About Us 3</a></li>
                                         </ul>
                                     </li>
                                     <li class="header__subnav-item">
-                                        <a href="" class="header__subnav-item-link">Contact<i class="fas fa-caret-right header__subnav-item-link__icon"></i></a>
+                                        <a href="" class="header__subnav-item-link">Contact<i
+                                                class="fas fa-caret-right header__subnav-item-link__icon"></i></a>
                                         <ul class="header__subnav-list header__subnav-list__subnav">
-                                            <li class="header__subnav-item"><a href="" class="header__subnav-item-link">Contact 1</a></li>
-                                            <li class="header__subnav-item"><a href="" class="header__subnav-item-link">Contact 2</a></li>
+                                            <li class="header__subnav-item"><a href=""
+                                                    class="header__subnav-item-link">Contact 1</a></li>
+                                            <li class="header__subnav-item"><a href=""
+                                                    class="header__subnav-item-link">Contact 2</a></li>
                                         </ul>
                                     </li>
                                 </ul>
@@ -111,23 +171,32 @@
                             <li class="header__nav-item">
                                 <a href="" class="link-click header__nav-link">NEWS</a>
                                 <ul class="header__subnav-list">
-                                    <li class="header__subnav-item"><a href="" class="header__subnav-item-link">Archive</a></li>
+                                    <li class="header__subnav-item"><a href=""
+                                            class="header__subnav-item-link">Archive</a></li>
                                     <li class="header__subnav-item">
-                                        <a href="" class="header__subnav-item-link">Single Post<i class="fas fa-caret-right header__subnav-item-link__icon"></i></a>
+                                        <a href="" class="header__subnav-item-link">Single Post<i
+                                                class="fas fa-caret-right header__subnav-item-link__icon"></i></a>
                                         <ul class="header__subnav-list header__subnav-list__subnav">
-                                            <li class="header__subnav-item"><a href="" class="header__subnav-item-link">Full Width</a></li>
-                                            <li class="header__subnav-item"><a href="" class="header__subnav-item-link">Right Sidebar</a></li>
-                                            <li class="header__subnav-item"><a href="" class="header__subnav-item-link">Left Sidebar</a></li>
+                                            <li class="header__subnav-item"><a href=""
+                                                    class="header__subnav-item-link">Full Width</a></li>
+                                            <li class="header__subnav-item"><a href=""
+                                                    class="header__subnav-item-link">Right Sidebar</a></li>
+                                            <li class="header__subnav-item"><a href=""
+                                                    class="header__subnav-item-link">Left Sidebar</a></li>
                                         </ul>
                                     </li>
                                 </ul>
                             </li>
                             <li class="header__nav-item"><a href="" class="link-click header__nav-link">CONTACT</a>
                                 <ul class="header__subnav-list">
-                                    <li class="header__subnav-item"><a href="" class="header__subnav-item-link">Contact 1</a></li>
-                                    <li class="header__subnav-item"><a href="" class="header__subnav-item-link">Contact 2</a></li>
-                                </ul></li>
-                            <li class="header__nav-item header__nav-item-book"><a href="" class="link-click header__nav-link header__nav-link-book">BOOK NOW</a></li>
+                                    <li class="header__subnav-item"><a href="" class="header__subnav-item-link">Contact
+                                            1</a></li>
+                                    <li class="header__subnav-item"><a href="" class="header__subnav-item-link">Contact
+                                            2</a></li>
+                                </ul>
+                            </li>
+                            <li class="header__nav-item header__nav-item-book"><a href=""
+                                    class="link-click header__nav-link header__nav-link-book">BOOK NOW</a></li>
                         </ul>
                     </div>
                     <div class="sitebar">
@@ -143,27 +212,40 @@
                                 </div>
                                 <ul class="sitebar__location-list">
                                     <li class="sitebar__location-item">
-                                        <div class="sitebar__location-item__img  sitebar__location-item__about__1"></div>
-                                        <a href=""class="sitebar__location-item__about">
+                                        <div class="sitebar__location-item__img  sitebar__location-item__about__1">
+                                        </div>
+                                        <a href="" class="sitebar__location-item__about">
                                             <h4 class="sitebar__location-item__name">Berlin</h4>
-                                            <p class="sitebar__location-item__continent"><i class="fas fa-map-marker-alt sitebar__location-item-icon"></i> Europe<p>
-                                            <div class="sitebar__location-item__price sitebar__location-item__price_1">FROM 700 $</div>
+                                            <p class="sitebar__location-item__continent"><i
+                                                    class="fas fa-map-marker-alt sitebar__location-item-icon"></i>
+                                                Europe<p>
+                                                <div
+                                                    class="sitebar__location-item__price sitebar__location-item__price_1">
+                                                    FROM 700 $</div>
                                         </a>
                                     </li>
                                     <li class="sitebar__location-item">
                                         <div class="sitebar__location-item__img sitebar__location-item__about__2"></div>
-                                        <a href=""class="sitebar__location-item__about">
-                                            <h4 class="sitebar__location-item__name">Hong Kong</h4> 
-                                            <p class="sitebar__location-item__continent"><i class="fas fa-map-marker-alt sitebar__location-item-icon"></i> Asian<p>
-                                            <div class="sitebar__location-item__price sitebar__location-item__price_2">FROM 500 $</div>
+                                        <a href="" class="sitebar__location-item__about">
+                                            <h4 class="sitebar__location-item__name">Hong Kong</h4>
+                                            <p class="sitebar__location-item__continent"><i
+                                                    class="fas fa-map-marker-alt sitebar__location-item-icon"></i> Asian
+                                                <p>
+                                                <div
+                                                    class="sitebar__location-item__price sitebar__location-item__price_2">
+                                                    FROM 500 $</div>
                                         </a>
                                     </li>
                                     <li class="sitebar__location-item">
                                         <div class="sitebar__location-item__img sitebar__location-item__about__3"></div>
-                                        <a href=""class="sitebar__location-item__about">
+                                        <a href="" class="sitebar__location-item__about">
                                             <h4 class="sitebar__location-item__name">San Francisco</h4>
-                                            <p class="sitebar__location-item__continent"><i class="fas fa-map-marker-alt sitebar__location-item-icon"></i> United State<p>
-                                            <div class="sitebar__location-item__price sitebar__location-item__price_3">FROM 700 $</div>
+                                            <p class="sitebar__location-item__continent"><i
+                                                    class="fas fa-map-marker-alt sitebar__location-item-icon"></i>
+                                                United State<p>
+                                                <div
+                                                    class="sitebar__location-item__price sitebar__location-item__price_3">
+                                                    FROM 700 $</div>
                                         </a>
                                     </li>
                                 </ul>
@@ -176,7 +258,8 @@
                                             <i class="fab fa-fort-awesome sitebar__location--demo__icon"></i>
                                             <div class="sitebar__location--demo__about">
                                                 <p class="sitebar__location-item__continent">Europe</p>
-                                                <p class="sitebar__location-item__package">3 PACKAGES<p>
+                                                <p class="sitebar__location-item__package">3 PACKAGES
+                                                <p>
                                             </div>
                                         </div>
                                     </div>
@@ -188,7 +271,8 @@
                                             </li>
                                             <li class="sitebar__location-item__item">
                                                 <a href="" class="sitebar__location-item__link">Amsterdam</a>
-                                            </li><li class="sitebar__location-item__item">
+                                            </li>
+                                            <li class="sitebar__location-item__item">
                                                 <a href="" class="sitebar__location-item__link">Tuscany</a>
                                             </li>
                                         </ul>
@@ -205,27 +289,40 @@
                                 </div>
                                 <ul class="sitebar__location-list">
                                     <li class="sitebar__location-item">
-                                        <div class="sitebar__location-item__img  sitebar__location-item__about__4"></div>
-                                        <a href=""class="sitebar__location-item__about">
+                                        <div class="sitebar__location-item__img  sitebar__location-item__about__4">
+                                        </div>
+                                        <a href="" class="sitebar__location-item__about">
                                             <h4 class="sitebar__location-item__name">Tuscany</h4>
-                                            <p class="sitebar__location-item__continent"><i class="fas fa-map-marker-alt sitebar__location-item-icon"></i> Italy<p>
-                                            <div class="sitebar__location-item__price sitebar__location-item__price_1">FROM 730 $</div>
+                                            <p class="sitebar__location-item__continent"><i
+                                                    class="fas fa-map-marker-alt sitebar__location-item-icon"></i> Italy
+                                                <p>
+                                                <div
+                                                    class="sitebar__location-item__price sitebar__location-item__price_1">
+                                                    FROM 730 $</div>
                                         </a>
                                     </li>
                                     <li class="sitebar__location-item">
                                         <div class="sitebar__location-item__img sitebar__location-item__about__5"></div>
-                                        <a href=""class="sitebar__location-item__about">
+                                        <a href="" class="sitebar__location-item__about">
                                             <h4 class="sitebar__location-item__name">Amsterdam</h4>
-                                            <p class="sitebar__location-item__continent"><i class="fas fa-map-marker-alt sitebar__location-item-icon"></i> Netherlands<p>
-                                            <div class="sitebar__location-item__price sitebar__location-item__price_2">FROM 1500 $</div>
+                                            <p class="sitebar__location-item__continent"><i
+                                                    class="fas fa-map-marker-alt sitebar__location-item-icon"></i>
+                                                Netherlands<p>
+                                                <div
+                                                    class="sitebar__location-item__price sitebar__location-item__price_2">
+                                                    FROM 1500 $</div>
                                         </a>
                                     </li>
                                     <li class="sitebar__location-item">
                                         <div class="sitebar__location-item__img sitebar__location-item__about__6"></div>
-                                        <a href=""class="sitebar__location-item__about">
+                                        <a href="" class="sitebar__location-item__about">
                                             <h4 class="sitebar__location-item__name">Phuket</h4>
-                                            <p class="sitebar__location-item__continent"><i class="fas fa-map-marker-alt sitebar__location-item-icon"></i>Thailandia<p>
-                                            <div class="sitebar__location-item__price sitebar__location-item__price_3">FROM 500 $</div>
+                                            <p class="sitebar__location-item__continent"><i
+                                                    class="fas fa-map-marker-alt sitebar__location-item-icon"></i>Thailandia
+                                                <p>
+                                                <div
+                                                    class="sitebar__location-item__price sitebar__location-item__price_3">
+                                                    FROM 500 $</div>
                                         </a>
                                     </li>
                                 </ul>
@@ -237,7 +334,8 @@
                     <h1 class="header__content-title">Search your next Holiday</h1>
                     <h5 class="header__content-subtitle">CHECK OUR BEST PROMOTIONS</h5>
                     <div class="header__content-search">
-                        <input class="header__content-input" type="text" name="search"placeholder="Choose your Destination">
+                        <input class="header__content-input" type="text" name="search"
+                            placeholder="Choose your Destination">
                         <i class="fas fa-search header__content-icon-search"></i>
                         <div class="header__content-search__focus">
                             <ul class="header__content-search__list">
@@ -265,12 +363,14 @@
                                     <i class="fas fa-theater-masks header__content-theme__item-icon"></i>
                                     <p class="header__content-theme__item-name">CULTURAL</p>
                                 </a>
-                            </li><li class="header__content-theme__item">
+                            </li>
+                            <li class="header__content-theme__item">
                                 <a href="" class="header__content-theme__item-link">
                                     <i class="fas fa-tree header__content-theme__item-icon"></i>
                                     <p class="header__content-theme__item-name">SPORT</p>
                                 </a>
-                            </li><li class="header__content-theme__item">
+                            </li>
+                            <li class="header__content-theme__item">
                                 <a href="" class="header__content-theme__item-link">
                                     <i class="fas fa-camera-retro header__content-theme__item-icon"></i>
                                     <p class="header__content-theme__item-name">HISTORY</p>
@@ -293,13 +393,15 @@
                             <div class="col-xl-4 col-sm-6 col-12">
                                 <div class="slider-grid__item">
                                     <div class="sitebar__location-demo">
-                                        <div class="sitebar__location-demo-wrap sitebar__location-demo-wrap_1 sitebar__location-demo-wrap__hidden">
+                                        <div
+                                            class="sitebar__location-demo-wrap sitebar__location-demo-wrap_1 sitebar__location-demo-wrap__hidden">
                                             <div class="sitebar__location-demo__bg"></div>
                                             <div class="sitebar__location--demo__content">
                                                 <i class="fab fa-fort-awesome sitebar__location--demo__icon"></i>
                                                 <div class="sitebar__location--demo__about">
                                                     <p class="sitebar__location-item__continent">Europe</p>
-                                                    <p class="sitebar__location-item__package">3 PACKAGES<p>
+                                                    <p class="sitebar__location-item__package">3 PACKAGES
+                                                    <p>
                                                 </div>
                                             </div>
                                         </div>
@@ -311,12 +413,14 @@
                                                 </li>
                                                 <li class="sitebar__location-item__item">
                                                     <a href="" class="sitebar__location-item__link">Amsterdam</a>
-                                                </li><li class="sitebar__location-item__item">
+                                                </li>
+                                                <li class="sitebar__location-item__item">
                                                     <a href="" class="sitebar__location-item__link">Tuscany</a>
                                                 </li>
                                             </ul>
                                             <div class="sitebar__location-item__view">
-                                                <a href="" class="sitebar__location-item__view-link">VIEW DESTINATION</a>
+                                                <a href="" class="sitebar__location-item__view-link">VIEW
+                                                    DESTINATION</a>
                                             </div>
                                         </div>
                                     </div>
@@ -325,13 +429,15 @@
                             <div class="col-xl-4 col-sm-6 col-12">
                                 <div class="slider-grid__item">
                                     <div class="sitebar__location-demo">
-                                        <div class="sitebar__location-demo-wrap sitebar__location-demo-wrap_2 sitebar__location-demo-wrap__hidden">
+                                        <div
+                                            class="sitebar__location-demo-wrap sitebar__location-demo-wrap_2 sitebar__location-demo-wrap__hidden">
                                             <div class="sitebar__location-demo__bg"></div>
                                             <div class="sitebar__location--demo__content">
                                                 <i class="fas fa-umbrella-beach sitebar__location--demo__icon"></i>
                                                 <div class="sitebar__location--demo__about">
                                                     <p class="sitebar__location-item__continent">Thailand</p>
-                                                    <p class="sitebar__location-item__package">1 PACKAGES<p>
+                                                    <p class="sitebar__location-item__package">1 PACKAGES
+                                                    <p>
                                                 </div>
                                             </div>
                                         </div>
@@ -343,7 +449,8 @@
                                                 </li>
                                             </ul>
                                             <div class="sitebar__location-item__view">
-                                                <a href="" class="sitebar__location-item__view-link">VIEW DESTINATION</a>
+                                                <a href="" class="sitebar__location-item__view-link">VIEW
+                                                    DESTINATION</a>
                                             </div>
                                         </div>
                                     </div>
@@ -352,13 +459,15 @@
                             <div class="col-xl-4 col-sm-6 col-12">
                                 <div class="slider-grid__item">
                                     <div class="sitebar__location-demo">
-                                        <div class="sitebar__location-demo-wrap sitebar__location-demo-wrap_3 sitebar__location-demo-wrap__hidden">
+                                        <div
+                                            class="sitebar__location-demo-wrap sitebar__location-demo-wrap_3 sitebar__location-demo-wrap__hidden">
                                             <div class="sitebar__location-demo__bg"></div>
                                             <div class="sitebar__location--demo__content">
                                                 <i class="fas fa-archway sitebar__location--demo__icon"></i>
                                                 <div class="sitebar__location--demo__about">
                                                     <p class="sitebar__location-item__continent">Asia</p>
-                                                    <p class="sitebar__location-item__package">2 PACKAGES<p>
+                                                    <p class="sitebar__location-item__package">2 PACKAGES
+                                                    <p>
                                                 </div>
                                             </div>
                                         </div>
@@ -371,7 +480,8 @@
                                                 </li>
                                             </ul>
                                             <div class="sitebar__location-item__view">
-                                                <a href="" class="sitebar__location-item__view-link">VIEW DESTINATION</a>
+                                                <a href="" class="sitebar__location-item__view-link">VIEW
+                                                    DESTINATION</a>
                                             </div>
                                         </div>
                                     </div>
@@ -380,13 +490,15 @@
                             <div class="col-xl-4 col-sm-6 col-12">
                                 <div class="slider-grid__item">
                                     <div class="sitebar__location-demo">
-                                        <div class="sitebar__location-demo-wrap sitebar__location-demo-wrap_4 sitebar__location-demo-wrap__hidden">
+                                        <div
+                                            class="sitebar__location-demo-wrap sitebar__location-demo-wrap_4 sitebar__location-demo-wrap__hidden">
                                             <div class="sitebar__location-demo__bg"></div>
                                             <div class="sitebar__location--demo__content">
                                                 <i class="fas fa-place-of-worship sitebar__location--demo__icon"></i>
                                                 <div class="sitebar__location--demo__about">
                                                     <p class="sitebar__location-item__continent">Italy</p>
-                                                    <p class="sitebar__location-item__package">1 PACKAGES<p>
+                                                    <p class="sitebar__location-item__package">1 PACKAGES
+                                                    <p>
                                                 </div>
                                             </div>
                                         </div>
@@ -398,7 +510,8 @@
                                                 </li>
                                             </ul>
                                             <div class="sitebar__location-item__view">
-                                                <a href="" class="sitebar__location-item__view-link">VIEW DESTINATION</a>
+                                                <a href="" class="sitebar__location-item__view-link">VIEW
+                                                    DESTINATION</a>
                                             </div>
                                         </div>
                                     </div>
@@ -407,13 +520,15 @@
                             <div class="col-xl-4 col-sm-6 col-12">
                                 <div class="slider-grid__item">
                                     <div class="sitebar__location-demo">
-                                        <div class="sitebar__location-demo-wrap sitebar__location-demo-wrap_5 sitebar__location-demo-wrap__hidden">
+                                        <div
+                                            class="sitebar__location-demo-wrap sitebar__location-demo-wrap_5 sitebar__location-demo-wrap__hidden">
                                             <div class="sitebar__location-demo__bg"></div>
                                             <div class="sitebar__location--demo__content">
                                                 <i class="fas fa-fan sitebar__location--demo__icon"></i>
                                                 <div class="sitebar__location--demo__about">
                                                     <p class="sitebar__location-item__continent">Netherlands</p>
-                                                    <p class="sitebar__location-item__package">1 PACKAGES<p>
+                                                    <p class="sitebar__location-item__package">1 PACKAGES
+                                                    <p>
                                                 </div>
                                             </div>
                                         </div>
@@ -425,7 +540,8 @@
                                                 </li>
                                             </ul>
                                             <div class="sitebar__location-item__view">
-                                                <a href="" class="sitebar__location-item__view-link">VIEW DESTINATION</a>
+                                                <a href="" class="sitebar__location-item__view-link">VIEW
+                                                    DESTINATION</a>
                                             </div>
                                         </div>
                                     </div>
@@ -434,13 +550,15 @@
                             <div class="col-xl-4 col-sm-6 col-12">
                                 <div class="slider-grid__item">
                                     <div class="sitebar__location-demo">
-                                        <div class="sitebar__location-demo-wrap sitebar__location-demo-wrap_6 sitebar__location-demo-wrap__hidden">
+                                        <div
+                                            class="sitebar__location-demo-wrap sitebar__location-demo-wrap_6 sitebar__location-demo-wrap__hidden">
                                             <div class="sitebar__location-demo__bg"></div>
                                             <div class="sitebar__location--demo__content">
                                                 <i class="fas fa-ankh sitebar__location--demo__icon"></i>
                                                 <div class="sitebar__location--demo__about">
                                                     <p class="sitebar__location-item__continent">United States</p>
-                                                    <p class="sitebar__location-item__package">1 PACKAGES<p>
+                                                    <p class="sitebar__location-item__package">1 PACKAGES
+                                                    <p>
                                                 </div>
                                             </div>
                                         </div>
@@ -452,7 +570,8 @@
                                                 </li>
                                             </ul>
                                             <div class="sitebar__location-item__view">
-                                                <a href="" class="sitebar__location-item__view-link">VIEW DESTINATION</a>
+                                                <a href="" class="sitebar__location-item__view-link">VIEW
+                                                    DESTINATION</a>
                                             </div>
                                         </div>
                                     </div>
@@ -473,17 +592,19 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="slider__demo">
                     <div class="container">
                         <div class="slider__demo-content">
                             <div class="slider__demo-info">
                                 <p class="text-subheading slider__demo-info__subtitle">NORTH AMERICA</p>
-                                <div class="text-heading slider__demo-info__title">The Best  
+                                <div class="text-heading slider__demo-info__title">The Best
                                     <span class="slider__demo-info__note">Beaches</span>
                                 </div>
-                                <p class="slider__demo-info__text">Lorem ipsum dolor sit amet, consectetur adip iscing elit. Proin rhoncus urna dictum neque molestie ultricies mauris ac.</p>
-                                <p class="slider__demo-info__text">Lorem ipsum dolor sit amet, consectetur adip iscing elit. Proin rhoncus urna dictum neque molestie ultricies mauris ac.</p>
+                                <p class="slider__demo-info__text">Lorem ipsum dolor sit amet, consectetur adip iscing
+                                    elit. Proin rhoncus urna dictum neque molestie ultricies mauris ac.</p>
+                                <p class="slider__demo-info__text">Lorem ipsum dolor sit amet, consectetur adip iscing
+                                    elit. Proin rhoncus urna dictum neque molestie ultricies mauris ac.</p>
                                 <div class="slider__demo-info__price">
                                     <h4 class="slider__demo-info__price-sale">800</h4>
                                     <h4 class="slider__demo-info__price-sell">500 $</h4>
@@ -524,11 +645,14 @@
                                                 <img src="./assets/img/slider-option-1.png" alt="">
                                             </div>
                                             <div class="slider__demo-options__item-decription">
-                                                <h5 class="text-heading slider__demo-options__item-heading">World Tour</h5>
+                                                <h5 class="text-heading slider__demo-options__item-heading">World Tour
+                                                </h5>
                                                 <p class="text-paragraph slider__demo-options__item-paragraph">
-                                                    Lorem ipsum dolor sit amet conse ctetur adip iscing elit Proin rhonc us urna dictum.
+                                                    Lorem ipsum dolor sit amet conse ctetur adip iscing elit Proin rhonc
+                                                    us urna dictum.
                                                 </p>
-                                                <a href="" class="text-paragraph slider__demo-options__item-link">View More</a>
+                                                <a href="" class="text-paragraph slider__demo-options__item-link">View
+                                                    More</a>
                                             </div>
                                         </div>
                                     </div>
@@ -540,9 +664,11 @@
                                             <div class="slider__demo-options__item-decription">
                                                 <h5 class="text-heading slider__demo-options__item-heading">Cruises</h5>
                                                 <p class="text-paragraph slider__demo-options__item-paragraph">
-                                                    Lorem ipsum dolor sit amet conse ctetur adip iscing elit Proin rhonc us urna dictum.
+                                                    Lorem ipsum dolor sit amet conse ctetur adip iscing elit Proin rhonc
+                                                    us urna dictum.
                                                 </p>
-                                                <a href="" class="text-paragraph slider__demo-options__item-link">View More</a>
+                                                <a href="" class="text-paragraph slider__demo-options__item-link">View
+                                                    More</a>
                                             </div>
                                         </div>
                                     </div>
@@ -552,11 +678,14 @@
                                                 <img src="./assets/img/slider-option-3.png" alt="">
                                             </div>
                                             <div class="slider__demo-options__item-decription">
-                                                <h5 class="text-heading slider__demo-options__item-heading">Best Tours</h5>
+                                                <h5 class="text-heading slider__demo-options__item-heading">Best Tours
+                                                </h5>
                                                 <p class="text-paragraph slider__demo-options__item-paragraph">
-                                                    Lorem ipsum dolor sit amet conse ctetur adip iscing elit Proin rhonc us urna dictum.
+                                                    Lorem ipsum dolor sit amet conse ctetur adip iscing elit Proin rhonc
+                                                    us urna dictum.
                                                 </p>
-                                                <a href="" class="text-paragraph slider__demo-options__item-link">View More</a>
+                                                <a href="" class="text-paragraph slider__demo-options__item-link">View
+                                                    More</a>
                                             </div>
                                         </div>
                                     </div>
@@ -587,7 +716,7 @@
                         </div>
                     </div>
                 </div>
-                
+
             </div>
             <div class="slider-grid">
                 <div class="slider-grid__heading">
@@ -609,20 +738,24 @@
                                         <div class="slider-grid__item-about">
                                             <a href="" class="slider-grid__item-about__link">
                                                 <p class="slider-grid__item-name">Berlin<p>
-                                                <p class="text-subheading slider-grid__item-location"><i class="fas fa-map-marker-alt "></i> Europe</p>
+                                                    <p class="text-subheading slider-grid__item-location"><i
+                                                            class="fas fa-map-marker-alt "></i> Europe</p>
                                             </a>
                                         </div>
                                         <div class="slider-grid__item-info">
-                                            <a href=""class="slider-grid__item-info-themes">
+                                            <a href="" class="slider-grid__item-info-themes">
                                                 <p class="text-subheading slider-grid__item-theme">CULTURAL</p>
-                                                <p class="text-subheading slider-grid__item-theme">RELAX 
-                                                    <span class="slider-grid__item-count slider-grid__item-count_1"><span>+</span> 1</span>
+                                                <p class="text-subheading slider-grid__item-theme">RELAX
+                                                    <span
+                                                        class="slider-grid__item-count slider-grid__item-count_1"><span>+</span>
+                                                        1</span>
                                                 </p>
                                             </a>
                                             <div class="slider-grid__item-info__price">700 $</div>
                                         </div>
                                         <p class="text-paragraph slider-grid__item-decription">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut efficitur ante. Donec dapibus dictum scelerisque.
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut efficitur
+                                            ante. Donec dapibus dictum scelerisque.
                                         </p>
                                         <div class="slider-grid__item-click slider-grid__item-click_1">
                                             <a href="" class="slider-grid__item-click__link">DETAILS</a>
@@ -642,20 +775,24 @@
                                         <div class="slider-grid__item-about">
                                             <a href="" class="slider-grid__item-about__link">
                                                 <p class="slider-grid__item-name">Hong Kong<p>
-                                                <p class="text-subheading slider-grid__item-location"><i class="fas fa-map-marker-alt "></i> Asian</p>
+                                                    <p class="text-subheading slider-grid__item-location"><i
+                                                            class="fas fa-map-marker-alt "></i> Asian</p>
                                             </a>
                                         </div>
                                         <div class="slider-grid__item-info">
-                                            <a href=""class="slider-grid__item-info-themes">
+                                            <a href="" class="slider-grid__item-info-themes">
                                                 <p class="text-subheading slider-grid__item-theme">HISTORY</p>
-                                                <p class="text-subheading slider-grid__item-theme">CULTURAL 
-                                                    <span class="slider-grid__item-count slider-grid__item-count_2"><span>+</span> 1</span>
+                                                <p class="text-subheading slider-grid__item-theme">CULTURAL
+                                                    <span
+                                                        class="slider-grid__item-count slider-grid__item-count_2"><span>+</span>
+                                                        1</span>
                                                 </p>
                                             </a>
                                             <div class="slider-grid__item-info__price">900 $</div>
                                         </div>
                                         <p class="text-paragraph slider-grid__item-decription">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut efficitur ante. Donec dapibus dictum scelerisque.
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut efficitur
+                                            ante. Donec dapibus dictum scelerisque.
                                         </p>
                                         <div class="slider-grid__item-click slider-grid__item-click_2">
                                             <a href="" class="slider-grid__item-click__link">DETAILS</a>
@@ -675,20 +812,24 @@
                                         <div class="slider-grid__item-about">
                                             <a href="" class="slider-grid__item-about__link">
                                                 <p class="slider-grid__item-name">San Francisco<p>
-                                                <p class="text-subheading slider-grid__item-location"><i class="fas fa-map-marker-alt "></i> United States</p>
+                                                    <p class="text-subheading slider-grid__item-location"><i
+                                                            class="fas fa-map-marker-alt "></i> United States</p>
                                             </a>
                                         </div>
                                         <div class="slider-grid__item-info">
-                                            <a href=""class="slider-grid__item-info-themes">
+                                            <a href="" class="slider-grid__item-info-themes">
                                                 <p class="text-subheading slider-grid__item-theme">SPORT</p>
-                                                <p class="text-subheading slider-grid__item-theme">RELAX 
-                                                    <span class="slider-grid__item-count slider-grid__item-count_3"><span>+</span> 1</span>
+                                                <p class="text-subheading slider-grid__item-theme">RELAX
+                                                    <span
+                                                        class="slider-grid__item-count slider-grid__item-count_3"><span>+</span>
+                                                        1</span>
                                                 </p>
                                             </a>
                                             <div class="slider-grid__item-info__price">200 $</div>
                                         </div>
                                         <p class="text-paragraph slider-grid__item-decription">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut efficitur ante. Donec dapibus dictum scelerisque.
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut efficitur
+                                            ante. Donec dapibus dictum scelerisque.
                                         </p>
                                         <div class="slider-grid__item-click slider-grid__item-click_3">
                                             <a href="" class="slider-grid__item-click__link">DETAILS</a>
@@ -733,20 +874,26 @@
                                         <div class="footer__body-info__logo">
                                             <img src="./assets/img/footer-logo.png" alt="">
                                         </div>
-                                        <div class="text-paragraph footer__body-info_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut diam et nibh condimentum venenatis eu ac magnasin. Quisque interdum est mauris, eget ullamcorper.</div>
+                                        <div class="text-paragraph footer__body-info_text">Lorem ipsum dolor sit amet,
+                                            consectetur adipiscing elit. Curabitur ut diam et nibh condimentum venenatis
+                                            eu ac magnasin. Quisque interdum est mauris, eget ullamcorper.</div>
                                         <div class="footer__body-info_social">
                                             <ul class="footer__body-info_social-list">
                                                 <li class="footer__body-info_social-item">
-                                                    <a href="" class="footer__body-info_social-link"><i class="fab fa-twitter footer__body-info_social-link__icon"></i></a>
+                                                    <a href="" class="footer__body-info_social-link"><i
+                                                            class="fab fa-twitter footer__body-info_social-link__icon"></i></a>
                                                 </li>
                                                 <li class="footer__body-info_social-item">
-                                                    <a href="" class="footer__body-info_social-link"><i class="fab fa-youtube footer__body-info_social-link__icon"></i></a>
+                                                    <a href="" class="footer__body-info_social-link"><i
+                                                            class="fab fa-youtube footer__body-info_social-link__icon"></i></a>
                                                 </li>
                                                 <li class="footer__body-info_social-item">
-                                                    <a href="" class="footer__body-info_social-link"><i class="fab fa-facebook-square footer__body-info_social-link__icon"></i></a>
+                                                    <a href="" class="footer__body-info_social-link"><i
+                                                            class="fab fa-facebook-square footer__body-info_social-link__icon"></i></a>
                                                 </li>
                                                 <li class="footer__body-info_social-item">
-                                                    <a href="" class="footer__body-info_social-link"><i class="fab fa-facebook-messenger footer__body-info_social-link__icon"></i></a>
+                                                    <a href="" class="footer__body-info_social-link"><i
+                                                            class="fab fa-facebook-messenger footer__body-info_social-link__icon"></i></a>
                                                 </li>
                                             </ul>
                                         </div>
@@ -758,11 +905,21 @@
                                             <div class="footer__body-info__detail">
                                                 <p class="text-subheading footer__body-info__subheading">OUR AGENCY</p>
                                                 <ul class="footer__body-info__list">
-                                                    <li class="footer__body-info__item text-paragraph"><i class="fas fa-angle-right footer__body-info__item-icon"></i>  Services</li>
-                                                    <li class="footer__body-info__item text-paragraph"><i class="fas fa-angle-right footer__body-info__item-icon"></i>  Insurancee</li>
-                                                    <li class="footer__body-info__item text-paragraph"><i class="fas fa-angle-right footer__body-info__item-icon"></i>  Agency</li>
-                                                    <li class="footer__body-info__item text-paragraph"><i class="fas fa-angle-right footer__body-info__item-icon"></i>  Tourism</li>
-                                                    <li class="footer__body-info__item text-paragraph"><i class="fas fa-angle-right footer__body-info__item-icon"></i>  Payment</li>
+                                                    <li class="footer__body-info__item text-paragraph"><i
+                                                            class="fas fa-angle-right footer__body-info__item-icon"></i>
+                                                        Services</li>
+                                                    <li class="footer__body-info__item text-paragraph"><i
+                                                            class="fas fa-angle-right footer__body-info__item-icon"></i>
+                                                        Insurancee</li>
+                                                    <li class="footer__body-info__item text-paragraph"><i
+                                                            class="fas fa-angle-right footer__body-info__item-icon"></i>
+                                                        Agency</li>
+                                                    <li class="footer__body-info__item text-paragraph"><i
+                                                            class="fas fa-angle-right footer__body-info__item-icon"></i>
+                                                        Tourism</li>
+                                                    <li class="footer__body-info__item text-paragraph"><i
+                                                            class="fas fa-angle-right footer__body-info__item-icon"></i>
+                                                        Payment</li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -770,11 +927,21 @@
                                             <div class="footer__body-info__detail">
                                                 <p class="text-subheading footer__body-info__subheading">PARTNERS</p>
                                                 <ul class="footer__body-info__list">
-                                                    <li class="footer__body-info__item text-paragraph"><i class="fas fa-angle-right footer__body-info__item-icon"></i>  Booking</li>
-                                                    <li class="footer__body-info__item text-paragraph"><i class="fas fa-angle-right footer__body-info__item-icon"></i>  RentalCar</li>
-                                                    <li class="footer__body-info__item text-paragraph"><i class="fas fa-angle-right footer__body-info__item-icon"></i>  HostelWorld</li>
-                                                    <li class="footer__body-info__item text-paragraph"><i class="fas fa-angle-right footer__body-info__item-icon"></i>  Trivago</li>
-                                                    <li class="footer__body-info__item text-paragraph"><i class="fas fa-angle-right footer__body-info__item-icon"></i>  TripAdvisor</li>
+                                                    <li class="footer__body-info__item text-paragraph"><i
+                                                            class="fas fa-angle-right footer__body-info__item-icon"></i>
+                                                        Booking</li>
+                                                    <li class="footer__body-info__item text-paragraph"><i
+                                                            class="fas fa-angle-right footer__body-info__item-icon"></i>
+                                                        RentalCar</li>
+                                                    <li class="footer__body-info__item text-paragraph"><i
+                                                            class="fas fa-angle-right footer__body-info__item-icon"></i>
+                                                        HostelWorld</li>
+                                                    <li class="footer__body-info__item text-paragraph"><i
+                                                            class="fas fa-angle-right footer__body-info__item-icon"></i>
+                                                        Trivago</li>
+                                                    <li class="footer__body-info__item text-paragraph"><i
+                                                            class="fas fa-angle-right footer__body-info__item-icon"></i>
+                                                        TripAdvisor</li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -782,11 +949,21 @@
                                             <div class="footer__body-info__detail">
                                                 <p class="text-subheading footer__body-info__subheading">LAST MINUTE</p>
                                                 <ul class="footer__body-info__list">
-                                                    <li class="footer__body-info__item text-paragraph"><i class="fas fa-angle-right footer__body-info__item-icon"></i>  London</li>
-                                                    <li class="footer__body-info__item text-paragraph"><i class="fas fa-angle-right footer__body-info__item-icon"></i>  California</li>
-                                                    <li class="footer__body-info__item text-paragraph"><i class="fas fa-angle-right footer__body-info__item-icon"></i>  Indonesia</li>
-                                                    <li class="footer__body-info__item text-paragraph"><i class="fas fa-angle-right footer__body-info__item-icon"></i>  Europe</li>
-                                                    <li class="footer__body-info__item text-paragraph"><i class="fas fa-angle-right footer__body-info__item-icon"></i>  Oceania</li>
+                                                    <li class="footer__body-info__item text-paragraph"><i
+                                                            class="fas fa-angle-right footer__body-info__item-icon"></i>
+                                                        London</li>
+                                                    <li class="footer__body-info__item text-paragraph"><i
+                                                            class="fas fa-angle-right footer__body-info__item-icon"></i>
+                                                        California</li>
+                                                    <li class="footer__body-info__item text-paragraph"><i
+                                                            class="fas fa-angle-right footer__body-info__item-icon"></i>
+                                                        Indonesia</li>
+                                                    <li class="footer__body-info__item text-paragraph"><i
+                                                            class="fas fa-angle-right footer__body-info__item-icon"></i>
+                                                        Europe</li>
+                                                    <li class="footer__body-info__item text-paragraph"><i
+                                                            class="fas fa-angle-right footer__body-info__item-icon"></i>
+                                                        Oceania</li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -803,7 +980,12 @@
             </div>
         </div>
     </div>
-
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
     <script src="./js/app.js"></script>
 </body>
 
