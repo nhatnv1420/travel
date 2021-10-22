@@ -1123,3 +1123,7 @@
   font-size: 14px;
   opacity: 1;
 }
+
+.carousel-control-next, .carousel-control-prev {
+  top: 100px;
+}
